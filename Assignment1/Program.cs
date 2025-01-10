@@ -1,32 +1,54 @@
-﻿namespace Assignment1;
-
-class Program
+﻿namespace Assignment1
 {
-    static void Main(string[] args)
+    class Program
     {
-        Program program = new Program();
-        program.start();
+        static void Main(string[] args)
+        {
+            Program program = new Program();
+            program.start();
+        }
+
+        void start()
+        {
+            //Ask the user for name and age
+            Console.Write("Enter your name: ");
+            string name = Console.ReadLine();
+
+            Console.Write("Enter your age: ");
+            int age = int.Parse(Console.ReadLine());
+
+            //Person object
+            Person person = new Person(name, age);
+
+            //Display the information
+            Console.WriteLine($"Name: {person.Name}");
+            Console.WriteLine($"Age: {person.Age}");
+
+            Console.ReadKey();
+        }
     }
 
-    void start()
+    class Person
     {
-        //Ask the user to enter the width and height
-        Console.Write("Enter width: ");
-        double width = Convert.ToDouble(Console.ReadLine());
+        private string _name;
+        private int _age;
 
-        Console.Write("Enter height: ");
-        double height = Convert.ToDouble(Console.ReadLine());
+        public Person(string name, int age)
+        {
+            _name = name;
+            _age = age;
+        }
 
-        //Create an instance for the rectangle
-        Rectangle rectangle = new Rectangle(width,height);
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
 
-        double area = rectangle.CalculateArea();
-        double perimeter = rectangle.CalculatePerimeter();
-
-        Console.WriteLine($"Area: {area}");
-        Console.WriteLine($"Perimeter: {perimeter}");
-
-        Console.ReadLine();
+        public int Age
+        {
+            get { return _age; }
+            set { _age = value; }
+        }
     }
 }
-

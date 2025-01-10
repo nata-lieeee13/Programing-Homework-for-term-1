@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/natalie/Projects/Homework Classes and Enums Week 5/Assignment1/Assignment1.csproj": {}
+    "/Users/natalie/Projects/Programming Week 6 Access modifiers and properties/Assignment1/Assignment1.csproj": {}
   },
   "projects": {
-    "/Users/natalie/Projects/Homework Classes and Enums Week 5/Assignment1/Assignment1.csproj": {
+    "/Users/natalie/Projects/Programming Week 6 Access modifiers and properties/Assignment1/Assignment1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/natalie/Projects/Homework Classes and Enums Week 5/Assignment1/Assignment1.csproj",
+        "projectUniqueName": "/Users/natalie/Projects/Programming Week 6 Access modifiers and properties/Assignment1/Assignment1.csproj",
         "projectName": "Assignment1",
-        "projectPath": "/Users/natalie/Projects/Homework Classes and Enums Week 5/Assignment1/Assignment1.csproj",
+        "projectPath": "/Users/natalie/Projects/Programming Week 6 Access modifiers and properties/Assignment1/Assignment1.csproj",
         "packagesPath": "/Users/natalie/.nuget/packages/",
-        "outputPath": "/Users/natalie/Projects/Homework Classes and Enums Week 5/Assignment1/obj/",
+        "outputPath": "/Users/natalie/Projects/Programming Week 6 Access modifiers and properties/Assignment1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/natalie/.nuget/NuGet/NuGet.Config"

@@ -1,15 +1,15 @@
-/Users/natalie/Projects/Homework Classes and Enums Week 5/Assignment4/bin/Debug/net7.0/Assignment4
-/Users/natalie/Projects/Homework Classes and Enums Week 5/Assignment4/bin/Debug/net7.0/Assignment4.deps.json
-/Users/natalie/Projects/Homework Classes and Enums Week 5/Assignment4/bin/Debug/net7.0/Assignment4.runtimeconfig.json
-/Users/natalie/Projects/Homework Classes and Enums Week 5/Assignment4/bin/Debug/net7.0/Assignment4.dll
-/Users/natalie/Projects/Homework Classes and Enums Week 5/Assignment4/bin/Debug/net7.0/Assignment4.pdb
-/Users/natalie/Projects/Homework Classes and Enums Week 5/Assignment4/obj/Debug/net7.0/Assignment4.csproj.AssemblyReference.cache
-/Users/natalie/Projects/Homework Classes and Enums Week 5/Assignment4/obj/Debug/net7.0/Assignment4.GeneratedMSBuildEditorConfig.editorconfig
-/Users/natalie/Projects/Homework Classes and Enums Week 5/Assignment4/obj/Debug/net7.0/Assignment4.AssemblyInfoInputs.cache
-/Users/natalie/Projects/Homework Classes and Enums Week 5/Assignment4/obj/Debug/net7.0/Assignment4.AssemblyInfo.cs
-/Users/natalie/Projects/Homework Classes and Enums Week 5/Assignment4/obj/Debug/net7.0/Assignment4.csproj.CoreCompileInputs.cache
-/Users/natalie/Projects/Homework Classes and Enums Week 5/Assignment4/obj/Debug/net7.0/Assignment4.dll
-/Users/natalie/Projects/Homework Classes and Enums Week 5/Assignment4/obj/Debug/net7.0/refint/Assignment4.dll
-/Users/natalie/Projects/Homework Classes and Enums Week 5/Assignment4/obj/Debug/net7.0/Assignment4.pdb
-/Users/natalie/Projects/Homework Classes and Enums Week 5/Assignment4/obj/Debug/net7.0/Assignment4.genruntimeconfig.cache
-/Users/natalie/Projects/Homework Classes and Enums Week 5/Assignment4/obj/Debug/net7.0/ref/Assignment4.dll
+/Users/natalie/Projects/Programming Week 6 Access modifiers and properties/Assignment4/bin/Debug/net7.0/Assignment4
+/Users/natalie/Projects/Programming Week 6 Access modifiers and properties/Assignment4/bin/Debug/net7.0/Assignment4.deps.json
+/Users/natalie/Projects/Programming Week 6 Access modifiers and properties/Assignment4/bin/Debug/net7.0/Assignment4.runtimeconfig.json
+/Users/natalie/Projects/Programming Week 6 Access modifiers and properties/Assignment4/bin/Debug/net7.0/Assignment4.dll
+/Users/natalie/Projects/Programming Week 6 Access modifiers and properties/Assignment4/bin/Debug/net7.0/Assignment4.pdb
+/Users/natalie/Projects/Programming Week 6 Access modifiers and properties/Assignment4/obj/Debug/net7.0/Assignment4.csproj.AssemblyReference.cache
+/Users/natalie/Projects/Programming Week 6 Access modifiers and properties/Assignment4/obj/Debug/net7.0/Assignment4.GeneratedMSBuildEditorConfig.editorconfig
+/Users/natalie/Projects/Programming Week 6 Access modifiers and properties/Assignment4/obj/Debug/net7.0/Assignment4.AssemblyInfoInputs.cache
+/Users/natalie/Projects/Programming Week 6 Access modifiers and properties/Assignment4/obj/Debug/net7.0/Assignment4.AssemblyInfo.cs
+/Users/natalie/Projects/Programming Week 6 Access modifiers and properties/Assignment4/obj/Debug/net7.0/Assignment4.csproj.CoreCompileInputs.cache
+/Users/natalie/Projects/Programming Week 6 Access modifiers and properties/Assignment4/obj/Debug/net7.0/Assignment4.dll
+/Users/natalie/Projects/Programming Week 6 Access modifiers and properties/Assignment4/obj/Debug/net7.0/refint/Assignment4.dll
+/Users/natalie/Projects/Programming Week 6 Access modifiers and properties/Assignment4/obj/Debug/net7.0/Assignment4.pdb
+/Users/natalie/Projects/Programming Week 6 Access modifiers and properties/Assignment4/obj/Debug/net7.0/Assignment4.genruntimeconfig.cache
+/Users/natalie/Projects/Programming Week 6 Access modifiers and properties/Assignment4/obj/Debug/net7.0/ref/Assignment4.dll

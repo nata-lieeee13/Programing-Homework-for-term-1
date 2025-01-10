@@ -1,60 +1,45 @@
-﻿namespace Assignment2;
-
-class Program
+﻿namespace Assignment2
 {
-    static void Main(string[] args)
+    class Program
     {
-        Program program = new Program();
-        program.start();
+        static void Main(string[] args)
+        {
+            Program program = new Program();
+            program.start();
+        }
+
+        void start()
+        {
+            //Ask the user for the name of the book and the author
+            Console.Write("Enter the book title: ");
+            string title = Console.ReadLine();
+
+            Console.Write("Enter the book author: ");
+            string author = Console.ReadLine();
+
+            //Create a book Object
+            Book book = new Book(title, author);
+
+            //Display the book details
+            Console.WriteLine("Book Details: ");
+            Console.WriteLine($"Title: {book.Title}");
+            Console.WriteLine($"Author: {book.Author}");
+
+            Console.ReadKey();
+        }
     }
 
-    void start()
+    class Book
     {
-        //Get the user to choose a day of week
-        Console.Write("Enter a day of the week (e.g., Monday): ");
-        string input = Console.ReadLine();
+        //Properties
+        public string Title { get; set; }
+        public string Author { get; set; }
 
-        try
+        //Intialize the properties
+        public Book(string title, string author)
         {
-            //Convert it to enum day 
-            Day day = (Day)Enum.Parse(typeof(Day), input, true);
-
-            //Use switch to print message
-            switch (day)
-            {
-                case Day.Monday: 
-                    Console.WriteLine("It's the start of the week :( ");
-                    break;
-                case Day.Tuesday:
-                    Console.WriteLine("Weekend is loading..");
-                    break;
-                case Day.Wednesday:
-                    Console.WriteLine(" You're halfway through.");
-                    break;
-                case Day.Thursday:
-                    Console.WriteLine("Almost there.");
-                    break;
-                case Day.Friday:
-                    Console.WriteLine("The weekend is near.");
-                    break;
-                case Day.Saturday:
-                    Console.WriteLine("Weekend is here ");
-                    break;
-                case Day.Sunday:
-                    Console.WriteLine("Prepare for the week ahead.");
-                    break;
-                default:
-                    Console.WriteLine("Invalid day entered.");
-                    break;
-            }
+            Title = title;
+            Author = author;
         }
-
-        catch (ArgumentException)
-        {
-            Console.WriteLine("Invalid input. ");
-        }
-
-        Console.ReadKey();
     }
 }
-

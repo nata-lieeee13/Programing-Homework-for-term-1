@@ -1,54 +1,72 @@
-﻿namespace Assignment3;
-
-class Program
+﻿namespace Assignment3
 {
-    static void Main(string[] args)
+    class Program
     {
-        Program program = new Program();
-        program.start();
-    }
-
-    void start()
-    {
-        //Create an array 
-        int[] numbers = new int[3];
-
-        //Prompt the user to enter the 3 integers
-        for (int i = 0; i < numbers.Length; i++)
+        static void Main(string[] args)
         {
-            Console.Write($"Enter integer {i + 1}: ");
-            while (!int.TryParse(Console.ReadLine(), out numbers[i]))
-            {
-                Console.WriteLine("Invalid input.");
-                Console.Write($"Enter integer {i + 1}: ");
-            }
+            Program program = new Program();
+            program.start();
         }
 
-        //Display the sum and average
-        int sum = CalculateSum(numbers);
-        double average = CalculateAverage(numbers);
+        void start()
+        {
+            //Ask the user for the car details
+            Console.Write("Enter the car make: ");
+            string make = Console.ReadLine();
 
-        Console.WriteLine($"Sum: {sum}");
-        Console.WriteLine($"Average: {average}");
+            Console.Write("Enter the car model: ");
+            string model = Console.ReadLine();
 
-        Console.ReadKey();
+            Console.Write("Enter the car year: ");
+            int year = int.Parse(Console.ReadLine());
+
+            //Car Object
+            Car car = new Car(make, model, year);
+
+            //Display the car information
+            Console.WriteLine("Car Details: ");
+            Console.WriteLine($"Make: {car.Make} ");
+            Console.WriteLine($"Model: {car.Model} ");
+            Console.WriteLine($"Year: {car.Year} ");
+
+            Console.ReadKey();
+        }
     }
 
-    int CalculateSum(int[] numbers)
+    class Car
     {
-        int sum = 0;
-        foreach (int num in numbers)
+        //Private firelds
+        private string _make;
+        private string _model;
+        private int _year;
+
+        //Constructo to intialize the fields
+        public Car(string make, string model, int year)
         {
-            sum += num;
+            _make = make;
+            _model = model;
+            _year = year; 
         }
 
-        return sum;
-    }
+        //Public property for make 
+        public string Make
+        {
+            get { return _make; }
+            set { _make = value; }
+        }
 
-    double CalculateAverage(int[] numbers)
-    {
-        if (numbers.Length == 0) return 0;
-        return (double)CalculateSum(numbers) / numbers.Length;
+        //Public property for model
+        public string Model
+        {
+            get { return _model; }
+            set { _model = value; }
+        }
+
+        //Public property for year
+        public int Year
+        {
+            get { return _year; }
+            set { _year = value; }
+        }
     }
 }
-

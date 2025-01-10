@@ -10,59 +10,51 @@ class Program
 
     void start()
     {
-        //create an array that holds 20 integer elements 
+        //Get the user to choose a day of week
+        Console.Write("Enter a day of the week (e.g., Monday): ");
+        string input = Console.ReadLine();
 
-        int[] numbers = new int[20];
-
-        FillArray(numbers);
-
-        DisplayArray(numbers);
-
-        int smallestNumber = GetSmallestNumber(numbers);
-
-        Console.WriteLine($"Smallest number is: {smallestNumber}");
-
-        Console.ReadKey();
-
-    }
-
-    // Create a method that fills the array with random numbers
-    void FillArray(int[] numbers)
-    {
-        Random random = new Random();
-
-        for (int i = 0; i < numbers.Length; i++)
+        try
         {
-            numbers[i] = random.Next(1, 100);
-        }
+            //Convert it to enum day 
+            Day day = (Day)Enum.Parse(typeof(Day), input, true);
 
-    }
-
-    //Display the array with random numbers
-    void DisplayArray(int[] numbers)
-    {
-        for (int i = 0; i < numbers.Length; i++)
-        {
-            Console.WriteLine($"{numbers[i]}");
-        }
-    }
-
-    //Return the smallest number in array
-    int GetSmallestNumber(int[] numbers)
-    {
-        int smallest = numbers[0];
-
-        for (int i = 1; i < numbers.Length; i++ )
-        {
-            if (numbers[i] < smallest)
+            //Use switch to print message
+            switch (day)
             {
-                smallest = numbers[i];
+                case Day.Monday: 
+                    Console.WriteLine("It's the start of the week :( ");
+                    break;
+                case Day.Tuesday:
+                    Console.WriteLine("Weekend is loading..");
+                    break;
+                case Day.Wednesday:
+                    Console.WriteLine(" You're halfway through.");
+                    break;
+                case Day.Thursday:
+                    Console.WriteLine("Almost there.");
+                    break;
+                case Day.Friday:
+                    Console.WriteLine("The weekend is near.");
+                    break;
+                case Day.Saturday:
+                    Console.WriteLine("Weekend is here ");
+                    break;
+                case Day.Sunday:
+                    Console.WriteLine("Prepare for the week ahead.");
+                    break;
+                default:
+                    Console.WriteLine("Invalid day entered.");
+                    break;
             }
         }
 
-        return smallest; 
+        catch (ArgumentException)
+        {
+            Console.WriteLine("Invalid input. ");
+        }
+
+        Console.ReadKey();
     }
-
 }
-
 

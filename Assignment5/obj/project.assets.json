@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/natalie/Desktop/Week 4 homework/Assignment5/Assignment5.csproj",
+      "projectUniqueName": "/Users/natalie/Projects/Homework Classes and Enums Week 5/Assignment5/Assignment5.csproj",
       "projectName": "Assignment5",
-      "projectPath": "/Users/natalie/Desktop/Week 4 homework/Assignment5/Assignment5.csproj",
+      "projectPath": "/Users/natalie/Projects/Homework Classes and Enums Week 5/Assignment5/Assignment5.csproj",
       "packagesPath": "/Users/natalie/.nuget/packages/",
-      "outputPath": "/Users/natalie/Desktop/Week 4 homework/Assignment5/obj/",
+      "outputPath": "/Users/natalie/Projects/Homework Classes and Enums Week 5/Assignment5/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/natalie/.nuget/NuGet/NuGet.Config"

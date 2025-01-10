@@ -10,69 +10,36 @@ class Program
 
     void start()
     {
-        //Get the array size 
-        const int arraySize = 1000;
-        int[] numbers = new int[arraySize];
+        //create an array
+        Person[] persons = new Person[3];
 
-        //Read the number given
-        ReadNumbers(numbers);
-
-        //User choose the search value
-        Console.Write("Enter a search number: ");
-        int searchValue;
-
-        while (!int.TryParse(Console.ReadLine(), out searchValue))
+        for (int i = 0; i < persons.Length; i++)
         {
-            Console.Write("Invalid input");
+            Console.Write($"Enter the name of person {i + 1}: ");
+            string name = Console.ReadLine();
+
+            Console.Write($"Enter the age of person {i + 1}: ");
+            int age;
+            while (!int.TryParse(Console.ReadLine(), out age) || age < 0)
+            {
+                Console.WriteLine("Invalid input.");
+                Console.Write($"Enter the age of person {i + 1}: ");
+            }
+
+            persons[i] = new Person(name, age);
         }
-
-        // Count the number of occurrences of the search value
-        int count = CountSearchValue(numbers, searchValue);
-
-        // Display the result
-        Console.WriteLine($"The number of occurences of a search value {searchValue} is: {count} ");
+            PrintPersonArray(persons);
 
         Console.ReadKey();
     }
 
-
-    //Read the numbers and stop at 0
-    void ReadNumbers(int[] numbers)
+    void PrintPersonArray(Person[] persons)
     {
-        int index = 0;
-
-        while (index < numbers.Length)
+        Console.WriteLine("\nDisplaying all persons:");
+        foreach (Person person in persons)
         {
-            Console.Write("Enter a number (0=stop): ");
-            int input = int.Parse(Console.ReadLine ());
-
-                if ( input == 0)
-                {
-                    break;
-                }
-
-            numbers[index] = input;
-            index++;
+            person.DisplayPersonInfo();
         }
     }
-
-    //Search for the value to tell the count
-    int CountSearchValue(int[] numbers, int searchValue)
-    {
-        int count = 0;
-
-        for (int i = 0; i < numbers.Length; i++)
-        {
-            if (numbers[i] == searchValue)
-            {
-                count++;
-            }
-        }
-
-        return count;
-    }
-
 }
-
-
 
